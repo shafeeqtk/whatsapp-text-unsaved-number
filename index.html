@@ -1,0 +1,23 @@
+<html>
+<script>
+function go(elem)
+{
+    var mobileNumber = document.getElementById("mobileNum").value;
+    if(mobileNumber === '')
+    {
+      return;
+    }
+    window.location.href = "https://api.whatsapp.com/send?phone="+mobileNumber;
+
+ }
+</script>
+  <title>
+    Text unknown whatsapp number
+  </title>
+  <body>
+    <input id="mobileNum" type="text"></input>
+    <button id="btn" type="button" onclick="javascript:go(this)">Go</button>
+    <div id="#result"></div>
+  </body>
+
+</html>
